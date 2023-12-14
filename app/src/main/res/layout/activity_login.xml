@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <View
+        android:id="@+id/l_background"
+        android:background="@color/background"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="414dp"
+        android:layout_height="800dp" />
+
+    <ImageView
+        android:id="@+id/l_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/wanitanunjuk"
+        android:src="@drawable/wanitanunjuk"
+        android:layout_marginStart="-64dp"
+        android:layout_marginTop="83dp"
+        android:layout_width="410dp"
+        android:layout_height="300dp" />
+
+    <View
+        android:id="@+id/l_kotak_kuning"
+        android:layout_width="414dp"
+        android:layout_height="845dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="375dp"
+        android:background="@drawable/kotak_kuning_shape" />
+
+    <TextView
+        android:id="@+id/l_email"
+        android:fontFamily="@font/monserratbold"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="405dp"
+        android:layout_width="51dp"
+        android:layout_height="25.5dp"
+        android:text="Email" />
+
+    <RelativeLayout
+        android:id="@+id/l_kotak_email"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="73dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginTop="2dp"
+            android:layout_width="274dp"
+            android:layout_height="48dp"
+            android:hint="urmail@gmail.com "
+            android:backgroundTint="@color/secondaryColor"
+            android:fontFamily="@font/montserratlight"
+            android:paddingLeft="15dp"
+            android:textSize="13sp"
+            android:paddingTop="1dp"
+            android:background="@drawable/button_shape" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/l_password"
+        android:fontFamily="@font/monserratbold"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="485dp"
+        android:layout_width="88.5dp"
+        android:layout_height="48dp"
+        android:text="Password" />
+
+    <RelativeLayout
+        android:id="@+id/l_kotak_password"
+        android:layout_marginTop="510dp"
+        android:layout_marginStart="73dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="2dp"
+            android:layout_width="274dp"
+            android:layout_height="48dp"
+            android:hint="*************"
+            android:fontFamily="@font/montserratlight"
+            android:backgroundTint="@color/secondaryColor"
+            android:paddingLeft="15dp"
+            android:paddingTop="9dp"
+            android:textSize="14sp"
+            android:background="@drawable/button_shape" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_sign"
+        android:layout_marginTop="580dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:textSize="15sp"
+        android:paddingLeft="4dp"
+        android:paddingTop="1dp"
+        android:fontFamily="@font/monserratbold"/>
+
+    <TextView
+        android:id="@+id/l_or"
+        android:fontFamily="@font/monserratbold"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="645dp"
+        android:layout_width="70dp"
+        android:layout_height="19.5dp"
+        android:text="or" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/l_or"
+        android:gravity="center">
+
+        <TextView
+            android:fontFamily="@font/monserratbold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "/>
+
+        <TextView
+            android:id="@+id/register"
+            android:fontFamily="@font/monserratbold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="SIGN UP"
+            android:textColor="@color/biru" />
+    </LinearLayout>
+
+</RelativeLayout>
