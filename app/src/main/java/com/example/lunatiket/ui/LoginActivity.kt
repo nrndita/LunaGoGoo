@@ -69,6 +69,10 @@ class LoginActivity: AppCompatActivity() {
                 val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
                 startActivity(intent)
             }
+            l_back.setOnClickListener{
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 
