@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.lunatiket.data.local.entity.UserEntity
 import com.example.lunatiket.databinding.ActivityRegisterBinding
 import com.example.lunatiket.ui.register.RegisterViewModel
+import kotlinx.android.synthetic.main.activity_login.l_back
+import kotlinx.android.synthetic.main.activity_register.r_back
+import kotlinx.android.synthetic.main.activity_register.txt_signin
 import org.koin.android.ext.android.inject
 
 //class RegisterActivity : AppCompatActivity() {
@@ -93,6 +96,14 @@ class RegisterActivity : AppCompatActivity() {
 
             val user = UserEntity(0, username, email, password)
             viewModel.insertUser(user)
+        }
+        txt_signin.setOnClickListener{
+            val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        r_back.setOnClickListener{
+            val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
